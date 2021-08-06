@@ -2,25 +2,61 @@
   <head>
     <title>SAOblog</title>
     <style>
+      *{
+        box-sizing: border-box;
+      }
       .tit{
+        padding: 15px;
+        background-color: #eeeeee;
         text-align: center;
+        border: 1px solid #cccccc;
       }
-      .blog{
-        position: absolute;
-        top: 300px;
-        left: 400px;
+      .ma{
       }
-      .friend{
-        position: absolute;
-        top: 300px;
-        right: 400px
+      .rw{
+        float: left;
+        padding: 10px;
       }
-      .bx{
-        position: absolute;
-        top: 1000px;
-        margin: auto;
-        width: 400px;
-        border: 1px solid;
+      .rw.lside{
+        text-align: left;
+        width:25%;
+      }
+      .rw.main{
+        text-align: center;
+        width:50%;
+      }
+      .rw.rside{
+        text-align: right;
+        width:25%;
+      }
+      .ma:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li{
+        text-align: center;
+        margin: 10px;
+      }
+      li a{
+        font-weight: light;
+        font-size:20px;
+        display:block;
+        text-decoration: none;
+        color:#000000;
+        width:100%;
+        padding:10px;
+        height:50px;
+        background-color:#ddeeee;
+      }
+      li a:hover{
+        color:#ffffff;
+        background-color:#998888;
       }
     </style>
   </head>
@@ -30,37 +66,45 @@
       <h1>19ty84's blog</h1>
       <h2>欢迎来到世界上最简陋的博客！</h2>
     </div>
-    <div class="blog">
-      <h3>博客区</h3>
-      <p><a href="./blogs/myfirstblog">我的第一篇博客</a></p>
-    </div>
-    <div class="friend">
-      <h3>友链区</h3>
-      <p><a href="http://oiclass.com">oiClass</a></p>
-      <p><a href="https://www.luogu.com.cn">洛谷</a></p>
+    
+    <div class="ma">
+      <div class="rw lside">
+        <h3>复制模板：</h3>
+        <p>
+ &lt;html&gt;
+          <br>
+  &nbsp;&nbsp;&lt;head&gt;
+          <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;SAOblog&lt;/title&gt;
+          <br>
+  &nbsp;&nbsp;&lt;/head&gt;
+          <br>
+  &nbsp;&nbsp;&lt;body&gt;
+          <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;&lt;a href="/"&gt;返回首页&lt;/a&gt;&lt;/h2&gt;
+          <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+          <br>
+  &nbsp;&nbsp;&lt;/body&gt;
+          <br>
+&lt;/html&gt;
+        </p>
+      </div>
+      
+      <div class="rw main">
+        <h2>博客区</h2>
+        <ul>
+          <li><a href="./blogs/myfirstblog">我的第一篇博客</a><li>
+        </ul>
+      </div>
+      
+      <div class="rw rside">
+        <h3>友链区</h3>
+        <p><a href="http://oiclass.com">oiClass</a></p>
+        <p><a href="https://www.luogu.com.cn">洛谷</a></p>
+      </div>
+      
     </div>
     <br>
-    <div class="bx">
-      复制模板：
-      <p>
- &lt;html&gt;
-        <br>
-  &nbsp;&nbsp;&lt;head&gt;
-        <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;SAOblog&lt;/title&gt;
-        <br>
-  &nbsp;&nbsp;&lt;/head&gt;
-        <br>
-  &nbsp;&nbsp;&lt;body&gt;
-        <br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;&lt;a href="/"&gt;返回首页&lt;/a&gt;&lt;/h2&gt;
-        <br>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-        <br>
-  &nbsp;&nbsp;&lt;/body&gt;
-        <br>
-&lt;/html&gt;
-      </div>
-    </p>
   </body>
 </html>
